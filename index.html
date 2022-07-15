@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container" id="container1">
+        <nav>
+            <ul>
+                <li class="nav-li">Home</li>
+                <li class="nav-li">Contact</li>
+                <li class="nav-li">About us</li>      
+        </ul>
+  
+        <button id="boton-1" onclick="mostrar();"style="display: ;"><img src="./assets/images/carrito.png" alt=""></button>
+        <div id="img-carrito">
+            
+            <div class="cart-1 cart show-cart">
+        
+                <h2>My Cart</h2>
+                <!-- Items carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;</span>
+                <button id="boton-comprar" class="btn-1 btn-comprar">Comprar</button>
+                <button id="boton-vaciar" class="btn2-2 btn-vaciar">Vaciar</button></p>
+                <!--boton cerrar-->
+                <div class="caja-boton"><button id="boton-2" onclick="ocultar();"style="display: none;"><img src="./assets/images/cerrar.jpg" alt=""></button></div>
+                
+            </div>
+        </div>
+
+         </nav>
+
+         <div class="franja"></div>
+         
+          <!--==================== HOME ====================-->
+          <section class="home" id="home">
+            <img class="background" src="./assets/images/background.jpg" alt="background">
+            <div class="home-container">
+              <div id="levi-img">
+                <img src="./assets/images/Levi-image.png" alt="Levi">
+              </div>
+      
+              <div class="home-data">
+                <h1 class="home-title">New Items!! <br> ATACK ON TITAN</h1>
+                <p class="home-description">
+                  Find the best and newest items from the best series of all the time!
+                </p>
+      
+              </div>
+            </div>
+          </section>
+        <div class="row">
+            <!-- Creado con JS-->
+            <main id="items" class="products row"></main>
+            <!-- Carrito -->
+        </div>
+    </div>
+
+      <!--Footer-->
+
+    <footer class="footer">
+        <div class="contact">
+            <h2>Contact</h2>
+            <h5>(+57)312 545 2156</h5>
+            <h5>atackontitanoficial@gmail.com</h5>
+            <h5>22132 State 51 Hwy Puxico, Missouri(MO), 63960</h5>
+        </div>
+
+        <div class="about">
+            <h2>About Us</h2>
+            <h5>Support Center</h5>
+            <h5>Customer Support</h5>
+            <h5>Our Company</h5>
+            
+        </div>
+
+       <div class="social">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+       </div>
+        
+      </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

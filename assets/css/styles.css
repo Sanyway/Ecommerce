@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(201, 123, 127);
+    height: 55px;
+    border-top: 3px solid white;
+}
+.container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:10px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    
+}
+
+.cart ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    
+}
+
+.nav-li {
+    font-size: 30px;
+    padding: 0px 10px 0px 10px;
+    height: fit-content;
+    border-radius: 10px;
+    
+}
+
+
+.nav-li:hover{
+    background-color: rgba(112, 72, 74, 0.295);
+    cursor: pointer;
+}
+
+#boton-1{
+    z-index: 2;
+    background-color: rgb(96, 180, 40);
+    width: 50px;
+    height: 45px;
+    border-radius: 30%;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+
+}
+
+
+.caja-boton{
+    height: 60px;
+}
+#boton-2 {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    margin: auto;
+    top: 1%;
+    right: 1%;
+
+}
+#boton-1:hover{
+    cursor: pointer;
+    top: 1.3%;
+    right: 1.3%;
+    transition: 0.2s;
+}
+
+
+
+#boton-2:hover {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+#boton-2 img{
+    height: 50px;
+}
+.cart{
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    border-top: 2px solid rgb(28, 61, 26);
+    border-right:2px solid rgb(28, 61, 26);
+    width:fit-content;
+    background-color: rgba(72, 102, 52, 0.801);
+    max-width: 200px;
+    font-family: 'Arima', cursive;
+    border-radius: 10px 0px 10px 10px;
+    
+    
+}
+
+.cart h2{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+.text-right{
+    margin-top: 3px;
+    max-width: 150px;
+    font-weight: bolder;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+.list-group{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.list-group-item{
+    width: 110px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: ultra-condensed;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    
+}
+.franja{
+    height: 10px;
+    background-color: rgb(236, 22, 76);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+}
+.btn-2{
+    position: absolute;
+    right: 0%;
+    margin-right: 5px;
+    background-color: rgba(255, 0, 0, 0.37);
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    border: 1px solid white ;
+    color: white;
+}
+
+.btn-2:hover{
+    background-color: red;
+    cursor: pointer;
+    
+}
+
+#boton-comprar, #boton-vaciar{
+    height: 25px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#boton-comprar:hover, #boton-vaciar:hover{
+    cursor: pointer;
+}
+
+
+.home-title, .home-description{
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    background-color: rgb(201, 123, 127);
+    padding: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    
+
+}
+
+.card-body{
+ border-radius: 10%; 
+ background-color:rgba(2, 0, 1, 0.849);
+ height: auto;
+}
+
+
+.images {
+height: 300px;
+border-radius: 5% 5% 2% 2%;
+
+
+}
+
+.card-title{
+    margin-left: 15px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-text{
+    margin-left: 15px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+
+}
+
+.btn-primary{
+    background-color: black;
+    font-size: 20px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: white;
+    border: 1.5px solid rgb(107, 91, 91);
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    font-weight: bolder;
+    
+  
+}
+
+.home {
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: -2;  
+  
+}
+
+.background {
+    position: absolute;
+    right: 0%;
+    width: 2000px;
+    z-index: -3;
+    
+}
+
+#levi-img {
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+}
+
+#levi-img img {  
+    width: 450px; 
+}
+
+
+.social, .contact, .about{
+    display: flex;
+    flex-direction: column;
+    column-span: 1;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.canasta {
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    height: 19px;
+    font-size: 17px;
+    z-index: 2;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: red;
+    width: 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media screen and (min-width: 576px) {
+    .md:p-2 {
+      padding: 1.1rem;
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 767px) {
+  
+  }
+  
+  
+  /* Notebooks */
+  @media screen and (min-width: 992px) {
+  
+  }
+  
+  /* Dispositivos grandes */
+  @media screen and (min-width: 1024px) {
+ 
+  }
+  
