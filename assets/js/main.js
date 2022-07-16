@@ -55,6 +55,7 @@ const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonComprar = document.querySelector('#boton-comprar');
 const DOMboton = document.querySelector('#boton-1');
+const DOMbotonAdd = document.querySelector ('btn-primary')
 
 
 
@@ -81,6 +82,7 @@ function renderizarProductos() {
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
+        miNodoBoton.setAttribute('id', 'btn-add')
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
@@ -184,11 +186,17 @@ function calcularTotal() {
         return total + miItem[0].price;
     }, 0).toFixed(2);
 }
-
-
+//contador carrito
+ 
+var counterVal = 0;
+  
+  function incrementClick() {
+      updateDisplay(++counterVal);
+  }
+    
 function cuentaCarrito(){
     const canasta= document.createElement('div');
-    canasta.textContent = 0
+    canasta.textContent = counterVal
     canasta.classList.add('canasta')
     canasta.setAttribute("id","canasta-id")
     DOMboton.appendChild(canasta); 
